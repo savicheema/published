@@ -9,9 +9,12 @@ import {
 } from "firebase/firestore";
 import { app } from ".";
 
+import { unstable_noStore as noStore } from "next/cache";
+
 export const db = getFirestore(app);
 
 export const getAllPublishedPosts = async () => {
+  noStore();
   const publishedPosts = [];
 
   const postsCollection = collection(db, "posts");
