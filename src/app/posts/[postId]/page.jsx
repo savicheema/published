@@ -17,6 +17,7 @@ const Post = async ({ params }) => {
         width="720"
         height="480"
         alt="featured image"
+        priority={true}
       />
       <Markdown>{post.firstParagraph}</Markdown>
       <Markdown>{text}</Markdown>
