@@ -21,19 +21,21 @@ export default function RootLayout({ children }) {
               <div style={{ margin: "0 4px" }}>
                 <Link href="/">Home</Link>
               </div>
+
               <div style={{ margin: "0 4px" }}>
-                <Link href="#">World</Link>
-              </div>
-              <div style={{ margin: "0 4px" }}>
-                <Link href="#">Georgia</Link>
+                <Link href="">World</Link>
               </div>
 
               <div style={{ margin: "0 4px" }}>
-                <Link href="#">Economy</Link>
+                <Link href="">Georgia</Link>
               </div>
 
               <div style={{ margin: "0 4px" }}>
-                <Link href="#">Agriculture</Link>
+                <Link href="">Economy</Link>
+              </div>
+
+              <div style={{ margin: "0 4px" }}>
+                <Link href="">Agriculture</Link>
               </div>
             </div>
           </div>
