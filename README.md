@@ -1,5 +1,17 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Self Deployment on a server
+
+Requirement NodeJS version 20 or above
+
+Commands:
+
+1. Build
+   `npm run build`
+
+2. Start the server
+   `npm run start`
+
 ## Getting Started
 
 First, run the development server:
