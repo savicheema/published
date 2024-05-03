@@ -33,6 +33,8 @@ const Post = async ({ params }) => {
 
   const markdown = await getPostMarkdown(post);
 
+  console.log("PROCESS", process.env.NODE_ENV);
+
   return (
     <main>
       <h1 style={{ marginTop: "0" }}>{post.title}</h1>
@@ -49,7 +51,7 @@ const Post = async ({ params }) => {
       <Markdown>{post.firstParagraph}</Markdown>
       {post.hasFile && /::twitter|::youtube/.test(markdown) ? (
         <iframe
-          src={`http://localhost:3000/markdowns/${postId}`}
+          src={`${process.env.HOST}/markdowns/${postId}`}
           width={1080}
           height={720}
           frameBorder={0}
