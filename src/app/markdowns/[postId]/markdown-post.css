@@ -1,0 +1,14 @@
+/* .mdxeditor {
+  height: 1080px;
+}
+
+.mdxeditor-root-contenteditable > div {
+  height: 1080px;
+} */
+
+html,
+body {
+  overflow: hidden;
+  background-color: var(--background-start-hsl);
+  color: var(--text-color);
+}
